@@ -1,0 +1,10 @@
+﻿@model IEnumerable<Project>
+
+@foreach(var p in Model)
+{
+    <div>
+        <h3>@p.Name</h3>
+        @p.DateCreate
+        @p.DateEdit
+    </div>
+}
